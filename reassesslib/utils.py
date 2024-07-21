@@ -24,11 +24,11 @@ def random_draw(x=None):
 
     """
     if x is None:
-        raise ValueError(“x should not be none”)
+        raise ValueError('x should not be none')
     elif type(x) is not int:
-        raise ValueError(“x be an integer”)
+        raise ValueError('x be an integer')
     elif x<=0:
-        raise ValueError(“x should be positive”)
+        raise ValueError('x should be positive')
     elif x % 2 == 1:
-        raise ValueError(“x cannot be odd”)
+        raise ValueError('x cannot be odd')
     return rd.choice(range(5), p=__softmax__(x*sin((x/2)*np.Pi)*np.array(range(5)))
