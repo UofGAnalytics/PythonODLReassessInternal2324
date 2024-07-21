@@ -2,7 +2,7 @@
 
 
 # Python ODL Reassessment Library
-PythonODLReassessInternal2324
+
 
 ![Flake8](https://github.com/UofGAnalytics/PythonODLReassessInternal2324/actions/workflows/flake8.yml/badge.svg)
 ![Tests](https://github.com/UofGAnalytics/PythonODLReassessInternal2324/actions/workflows/python-package.yml/badge.svg)
