@@ -31,4 +31,5 @@ def random_draw(x=None):
         raise ValueError('x should be positive')
     elif x % 2 == 1:
         raise ValueError('x cannot be odd')
-    return rd.choice(range(5), p=__softmax__(x*sin((x/2)*np.Pi)*np.array(range(5)))
+    return np.random.choice(range(5), p=__softmax__(x*np.sin((x/2)*np.pi)*np.array(range(5))))
+
