@@ -1,9 +1,9 @@
 import numpy as np
 
+
 def __softmax__(array):
     exp_array = np.exp(np.array(array))
     return exp_array/exp_array.sum()
-
 
 
 def random_draw(x=None):
@@ -17,7 +17,7 @@ def random_draw(x=None):
             - greater than 0
 
         Args:
-            x (a python integer matching conditions above): distribution parameter
+            x (python integer meeting conditions above): distribution parameter
 
         Returns:
             A single random draw from the resultant distribution.
@@ -27,9 +27,9 @@ def random_draw(x=None):
         raise ValueError('x should not be none')
     elif type(x) is not int:
         raise ValueError('x be an integer')
-    elif x<=0:
+    elif x <= 0:
         raise ValueError('x should be positive')
     elif x % 2 == 1:
         raise ValueError('x cannot be odd')
-    return np.random.choice(range(5), p=__softmax__(x*np.sin((x/2)*np.pi)*np.array(range(5))))
-
+    probs = __softmax__(x * np.sin((x/2) * np.pi)*np.array(range(5)))
+    return np.random.choice(range(5), p=probs)
