@@ -17,8 +17,9 @@ You can also install via https using the following command::
 
 In a terminal window for your current version of python. Note this will
 install/update all of the dependencies of our package. You can see the
-dependences on `this page <https://github.com/UofGAnalytics/PythonODLReassessInternal2324/blob/main/pyproject.toml>`.
+dependences on `this page`_.
 
+.. _this page: https://github.com/UofGAnalytics/PythonODLReassessInternal2324/blob/main/pyproject.toml
 
 It is likely that many of the routines will work with earlier versions of these
 libraries but installing this is more advanced than the installation proposed here.  
