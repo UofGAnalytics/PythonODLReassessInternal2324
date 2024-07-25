@@ -12,8 +12,8 @@ import os
 import sys
 
 
-project = 'bufflib'
-copyright = '2023, Andrew Elliott and Jenn Gaskell'
+project = 'reassesslib'
+copyright = '2024, Andrew Elliott and Jenn Gaskell'
 author = 'Andrew Elliott and Jenn Gaskell'
 release = '1.0'
 
@@ -54,6 +54,6 @@ autodoc_default_options = {
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
-# html_theme = 'classic'
+#html_theme = 'alabaster'
+html_theme = 'classic'
 html_static_path = ['_static']
