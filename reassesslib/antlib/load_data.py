@@ -50,14 +50,14 @@ class Ant:
         self.mandible_size = mandible_size
 
     def get_pos(self):
-        """Get position of the Ant at the initial time
+        """Get position of the Ant
 
         Returns:
             array_like: Returns the requested position
         """
         return self.start_pos
 
-        raise IncorrectArgument("Unknown time requested")
+        
 
     def get_stats(self):
         """Getting statistics on this Ant
