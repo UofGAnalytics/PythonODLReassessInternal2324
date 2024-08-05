@@ -9,7 +9,7 @@ The functions in this module are:
 
 import numpy as np
 from sklearn.ensemble import IsolationForest
-
+from copy import deepcopy
 
 def generate_movement(ants):
     """
@@ -48,13 +48,23 @@ def generate_movement(ants):
 
 
 def identify_outliers(soldier_ants, param_contamination):
+    """
+    Identifies outliers based on their head size and mandible size
+
+    Args:
+        soldier_ants
+        param_contamination: contamination parameter for the Isolation Forest
+
+    Returns:
+        Outlier information
+    """
     data = np.array(
         [[ant.head_size, ant.mandible_size] for ant in soldier_ants]
     )
     iso_forest = IsolationForest(contamination=param_contamination)
     outliers = iso_forest.fit_predict(data)
     outlier_info = {
-        ant.unique_id: ant.__dict__
+        ant.unique_id: deepcopy(ant.__dict__)
         for ant, outlier in zip(soldier_ants, outliers)
         if outlier == -1
     }
