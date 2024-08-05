@@ -11,6 +11,7 @@ import numpy as np
 from sklearn.ensemble import IsolationForest
 from copy import deepcopy
 
+
 def generate_movement(ants):
     """
     Generate random movements for ants based on their type.
