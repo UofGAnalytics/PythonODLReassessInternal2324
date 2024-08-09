@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>API &#8212; reassesslib 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=def86cc0" />
+    
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="reassesslib.utils.random_draw" href="generated/reassesslib.utils.random_draw.html" />
+    <link rel="prev" title="Installing the Package" href="Installation.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="generated/reassesslib.utils.random_draw.html" title="reassesslib.utils.random_draw"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Installation.html" title="Installing the Package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">reassesslib 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">API</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="api">
+<h1>API<a class="headerlink" href="#api" title="Link to this heading">¶</a></h1>
+<p>Our package consists of several different functions/classes to perform various
+operations on our dataset, including loading the data, plotting the data and
+analysis the data.</p>
+<section id="random-draw-function">
+<h2>Random draw function<a class="headerlink" href="#random-draw-function" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/reassesslib.utils.random_draw.html#reassesslib.utils.random_draw" title="reassesslib.utils.random_draw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reassesslib.utils.random_draw</span></code></a>([x])</p></td>
+<td><p>Samples from the numbers from 1 to 5, with a biased distribution based on the input.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="loading-data">
+<h2>Loading Data<a class="headerlink" href="#loading-data" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/reassesslib.load_data.Ant.html#reassesslib.load_data.Ant" title="reassesslib.load_data.Ant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reassesslib.load_data.Ant</span></code></a>(ant_type, ...)</p></td>
+<td><p>This is a simple class representing a Ant</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/reassesslib.load_data.load_data.html#reassesslib.load_data.load_data" title="reassesslib.load_data.load_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reassesslib.load_data.load_data</span></code></a>(data_set_id)</p></td>
+<td><p>Loads a specific Ant dataset from all of the datasets we collect every year.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="movement-functions">
+<h2>Movement Functions<a class="headerlink" href="#movement-functions" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/reassesslib.movement_and_outliers.generate_movement.html#reassesslib.movement_and_outliers.generate_movement" title="reassesslib.movement_and_outliers.generate_movement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reassesslib.movement_and_outliers.generate_movement</span></code></a>(ants)</p></td>
+<td><p>Generate random movements for ants based on their type.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="outlier-functions">
+<h2>Outlier Functions<a class="headerlink" href="#outlier-functions" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/reassesslib.movement_and_outliers.identify_outliers.html#reassesslib.movement_and_outliers.identify_outliers" title="reassesslib.movement_and_outliers.identify_outliers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reassesslib.movement_and_outliers.identify_outliers</span></code></a>(...)</p></td>
+<td><p>Identifies outliers based on their head size and mandible size</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="plotting-functions">
+<h2>Plotting Functions<a class="headerlink" href="#plotting-functions" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/reassesslib.plotting.plot_histogram.html#reassesslib.plotting.plot_histogram" title="reassesslib.plotting.plot_histogram"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reassesslib.plotting.plot_histogram</span></code></a>(speeds, ...)</p></td>
+<td><p>Plot histogram of ant speeds by type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/reassesslib.plotting.plot_scatter.html#reassesslib.plotting.plot_scatter" title="reassesslib.plotting.plot_scatter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reassesslib.plotting.plot_scatter</span></code></a>(x_values, ...)</p></td>
+<td><p>Create a scatter plot with different colors for different labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/reassesslib.plotting.plot_quiver.html#reassesslib.plotting.plot_quiver" title="reassesslib.plotting.plot_quiver"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reassesslib.plotting.plot_quiver</span></code></a>(X, Y, U, V)</p></td>
+<td><p>Plot quiver plot of ant movements.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">API</a><ul>
+<li><a class="reference internal" href="#random-draw-function">Random draw function</a></li>
+<li><a class="reference internal" href="#loading-data">Loading Data</a></li>
+<li><a class="reference internal" href="#movement-functions">Movement Functions</a></li>
+<li><a class="reference internal" href="#outlier-functions">Outlier Functions</a></li>
+<li><a class="reference internal" href="#plotting-functions">Plotting Functions</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="Installation.html"
+                          title="previous chapter">Installing the Package</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="generated/reassesslib.utils.random_draw.html"
+                          title="next chapter">reassesslib.utils.random_draw</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/API.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="generated/reassesslib.utils.random_draw.html" title="reassesslib.utils.random_draw"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Installation.html" title="Installing the Package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">reassesslib 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">API</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Andrew Elliott and Jenn Gaskell.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>reassesslib.load_data.Ant &#8212; reassesslib 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=def86cc0" />
+    
+    <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="reassesslib.load_data.load_data" href="reassesslib.load_data.load_data.html" />
+    <link rel="prev" title="reassesslib.utils.random_draw" href="reassesslib.utils.random_draw.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="reassesslib.load_data.load_data.html" title="reassesslib.load_data.load_data"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="reassesslib.utils.random_draw.html" title="reassesslib.utils.random_draw"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">reassesslib 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../API.html" accesskey="U">API</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">reassesslib.load_data.Ant</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="reassesslib-load-data-ant">
+<h1>reassesslib.load_data.Ant<a class="headerlink" href="#reassesslib-load-data-ant" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="reassesslib.load_data.Ant">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">reassesslib.load_data.</span></span><span class="sig-name descname"><span class="pre">Ant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ant_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">age</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mandible_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reassesslib.load_data.Ant" title="Link to this definition">¶</a></dt>
+<dd><p>This is a simple class representing a Ant</p>
+<p>This class has attributes: ant_type, start_pos, weight, age, mandible_size</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="reassesslib.load_data.Ant.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ant_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">age</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mandible_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reassesslib.load_data.Ant.__init__" title="Link to this definition">¶</a></dt>
+<dd><p>Setting up the Ant class</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ant_type</strong> – Queen, worker or drone</p></li>
+<li><p><strong>start_pos</strong> (<em>array_like</em>) – Array of the start position of the Ant</p></li>
+<li><p><strong>weight</strong> – Array of ant weights</p></li>
+<li><p><strong>age</strong> (<em>int</em><em> or </em><em>float</em>) – Array of the end position of the Ant</p></li>
+<li><p><strong>mandible_size</strong> – Array of mandible sizes of the ants</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reassesslib.load_data.Ant.__init__" title="reassesslib.load_data.Ant.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(ant_type, start_pos, weight, age, ...)</p></td>
+<td><p>Setting up the Ant class</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#reassesslib.load_data.Ant.get_pos" title="reassesslib.load_data.Ant.get_pos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_pos</span></code></a>()</p></td>
+<td><p>Get position of the Ant</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reassesslib.load_data.Ant.get_stats" title="reassesslib.load_data.Ant.get_stats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_stats</span></code></a>()</p></td>
+<td><p>Getting statistics on this Ant</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="reassesslib.load_data.Ant.get_pos">
+<span class="sig-name descname"><span class="pre">get_pos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reassesslib.load_data.Ant.get_pos" title="Link to this definition">¶</a></dt>
+<dd><p>Get position of the Ant</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Returns the requested position</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>array_like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reassesslib.load_data.Ant.get_stats">
+<span class="sig-name descname"><span class="pre">get_stats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reassesslib.load_data.Ant.get_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Getting statistics on this Ant</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary mapping each of the properties of the Ant to
+the respective value.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">reassesslib.load_data.Ant</a><ul>
+<li><a class="reference internal" href="#reassesslib.load_data.Ant"><code class="docutils literal notranslate"><span class="pre">Ant</span></code></a><ul>
+<li><a class="reference internal" href="#reassesslib.load_data.Ant.__init__"><code class="docutils literal notranslate"><span class="pre">Ant.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#reassesslib.load_data.Ant.get_pos"><code class="docutils literal notranslate"><span class="pre">Ant.get_pos()</span></code></a></li>
+<li><a class="reference internal" href="#reassesslib.load_data.Ant.get_stats"><code class="docutils literal notranslate"><span class="pre">Ant.get_stats()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="reassesslib.utils.random_draw.html"
+                          title="previous chapter">reassesslib.utils.random_draw</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="reassesslib.load_data.load_data.html"
+                          title="next chapter">reassesslib.load_data.load_data</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/generated/reassesslib.load_data.Ant.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="reassesslib.load_data.load_data.html" title="reassesslib.load_data.load_data"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="reassesslib.utils.random_draw.html" title="reassesslib.utils.random_draw"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">reassesslib 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../API.html" >API</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">reassesslib.load_data.Ant</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Andrew Elliott and Jenn Gaskell.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+  </body>
+</html>

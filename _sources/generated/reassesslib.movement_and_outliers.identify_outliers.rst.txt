@@ -1,0 +1,6 @@
+﻿reassesslib.movement\_and\_outliers.identify\_outliers
+======================================================
+
+.. currentmodule:: reassesslib.movement_and_outliers
+
+.. autofunction:: identify_outliers

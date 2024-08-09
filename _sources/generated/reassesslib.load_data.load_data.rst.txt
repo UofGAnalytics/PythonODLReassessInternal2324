@@ -1,0 +1,6 @@
+﻿reassesslib.load\_data.load\_data
+=================================
+
+.. currentmodule:: reassesslib.load_data
+
+.. autofunction:: load_data

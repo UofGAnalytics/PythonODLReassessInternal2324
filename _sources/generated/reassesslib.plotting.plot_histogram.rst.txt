@@ -1,0 +1,6 @@
+﻿reassesslib.plotting.plot\_histogram
+====================================
+
+.. currentmodule:: reassesslib.plotting
+
+.. autofunction:: plot_histogram

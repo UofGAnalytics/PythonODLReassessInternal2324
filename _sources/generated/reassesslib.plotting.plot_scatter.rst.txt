@@ -1,0 +1,6 @@
+﻿reassesslib.plotting.plot\_scatter
+==================================
+
+.. currentmodule:: reassesslib.plotting
+
+.. autofunction:: plot_scatter

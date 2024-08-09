@@ -1,0 +1,24 @@
+﻿reassesslib.load\_data.Ant
+==========================
+
+.. currentmodule:: reassesslib.load_data
+
+.. autoclass:: Ant
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Ant.__init__
+      ~Ant.get_pos
+      ~Ant.get_stats
+   
+   
+
+   
+   
+   

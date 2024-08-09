@@ -1,0 +1,6 @@
+﻿reassesslib.utils.random\_draw
+==============================
+
+.. currentmodule:: reassesslib.utils
+
+.. autofunction:: random_draw

@@ -1,0 +1,6 @@
+﻿reassesslib.plotting.plot\_quiver
+=================================
+
+.. currentmodule:: reassesslib.plotting
+
+.. autofunction:: plot_quiver
